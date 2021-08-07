@@ -2,6 +2,7 @@
 body {
 	font-family: 'Nunito', sans-serif;
     color: #333;
+    font-size: 14px
 }
 .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-heading-2xlarge, .uk-heading-large, .uk-heading-medium, .uk-heading-small, .uk-heading-xlarge, h1, h2, h3, h4, h5, h6 {
     font-family: 'Nunito', sans-serif;
@@ -36,6 +37,12 @@ body {
 .uk-navbar-nav>li.uk-active>a {
 	color: #449400;
 }
+.uk-dotnav>.uk-active>* {
+    background-color: #215619;
+}
+.uk-dotnav>*>* {
+    border: 1px solid #215619;
+}
 .uk-navbar-nav>li>a {
     -webkit-transition: color 300ms ease;
     transition: color 300ms ease;
@@ -53,6 +60,14 @@ body {
 }
 .uk-offcanvas-bar {
 	background-color: #fff;
+}
+.section-moquan,
+.section-daotao,
+.section-khoahoc {
+    background-color: #edfaeb;
+}
+.box-shadow-green {
+    box-shadow: 4px 4px 5px 3px rgb(58 96 52 / 65%);
 }
 /* MENU */
 .btn-menu-cart {
@@ -125,13 +140,11 @@ body {
 	text-decoration: none;
 }
 .mauxanh {
-    color: #215619;
+    color: #215619 !important;
 }
 .nenxanh {
-    background-color: #215619;
+    background-color: #215619 !important;
 }
-/* section certificate */
-
 .section-certificate {
   padding: 10px;
 }
@@ -200,10 +213,6 @@ body {
     text-transform: capitalize;
 }
 
-/* end section certificate */
-.section-moquan {
-    background-color: #edfaeb;
-}
 .card-section-moquan {
     position: absolute;bottom:-30px;background: #215619;width: 90%;margin-left: auto;margin-right: auto;left: 0;
 					right: 0;z-index: 1;border-radius: 15px;
@@ -215,13 +224,37 @@ body {
     font-weight: 600;
     font-size: 18px;
 }
-.btnBlueGreen {
+.btnGreen {
     background: #215619;
     border-radius: 15px;
     padding: 10px 26px;
     border-color: #fff;
     line-height: 24px;
-  }
+    font-weight: 600;
+    border: 1px solid;
+    transition: .3s all;
+}
+.btnGreen:hover {
+    color: #215619 !important;
+    background-color: #edfaeb;
+}
+.btnPink {
+    background: #ec3655;
+    border-radius: 15px;
+    padding: 10px 26px;
+    border-color: #fff;
+    line-height: 24px;
+    color: #fff;
+    font-weight: 600;
+    border: 2px solid;
+    transition: .3s all;
+}
+.btnPink:hover {
+    border: 2px solid #ec3655;
+    color: #ec3655;
+    background: transparent;
+    font-weight: 600;
+}
 .btnBlueGreenCircle {
     border-radius: 50%;
     background: #215619;
@@ -247,4 +280,28 @@ body {
 }
 .nature-card .uk-card{
     background-color: #3a6034;
+}
+.section-daotao .circles {
+    display: flex;
+}
+.section-daotao .circle-with-text {
+    background: #215619;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    text-align: center;
+    margin: 5px 0;
+    font-size: 15px;
+    padding: 15px;
+    display: flex;
+    height: 200px;
+    width: 200px;
+    color: #fff;
+    -webkit-box-shadow: 10px 10px 10px 0px #215619c9;
+    -moz-box-shadow: 10px 10px 10px 0px #215619c9;
+    box-shadow: 10px 10px 10px 0px #215619c9;
+}
+
+.section-daotao .multi-line-text {
+    font-size: 16px;
 }
